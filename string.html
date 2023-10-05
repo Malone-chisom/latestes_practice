@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="Demo"></p>
+
+
+    <script>
+        Document.getElementById("Demo").innerHTMl = favFruits.toString();
+
+
+
+
+        var mySentence = "I lieave in railway compound"
+        var mySentence2 = "she's mad at us"
+        let mySentenceSize = mySentence.length;
+
+        console.log(mySentence.toUpperCase())
+        console.log(mySentence2.toUpperCase())
+        console.log(mySentence2.length)
+
+        // **** array => []
+        const favFruits = ["apple", "banana", "kiwi", 'Tangerine', 'Orange', 'Pineapple', 'Cheryl', 'Strawberry'];
+        const registeredVoters = ["victor", "terry", "chisom", "amos"];
+        console.log(favFruits)
+        console.log(favFruits.length)
+        console.log(favFruits[favFruits.length - 1])
+        console.log(registeredVoters)
+        registeredVoters[2] = "faith";
+        console.log(registeredVoters);
+
+        // ****** objects => {}
+
+        let myFriend = {
+            name: "Faith",
+            age: 12,
+            beautiful: true,
+            blackSkin: false,
+            location: "Lagos"
+        }
+
+        console.log(myFriend)
+        console.log(myFriend.blackSkin)
+        myFriend.location = "ebute metta";
+        console.log(myFriend)
+
+        // (1) Access/print-out the last hobby of user 2 of the databaseUsersJan and the height of his best friend.
+
+        const databaseUsersJan = [
+            {
+                id: 1,
+                name: "Arthur Bush",
+                location: "USA",
+                hobbies: ["Swimming", "Dancing", "Singing", "Knacking", "Kissing"],
+                bestFrnd: {
+                    name: "Samuel Stone",
+                    age: 40,
+                    height: 45.78
+                }
+            },
+            {
+                id: 2,
+                name: "Kenny Black",
+                location: "London",
+                hobbies: ["Smoking", "Drinking", "Laughing", "Reading"],
+                bestFrnd: {
+                    name: "Nnamdi Dave",
+                    age: 24,
+                    height: 65.01
+                }
+            }
+        ]
+        console.log(databaseUsersJan)
+        console.log(databaseUsersJan[1].hobbies[databaseUsersJan[1].hobbies.length - 1])
+        databaseUsersJan[1].hobbies[1] = "coding";
+        var database_UsersJan = databaseUsersJan[1].hobbies[1].toLocaleUpperCase();
+        console.log(database_UsersJan)
+
+        let myName = "Samuel";
+        const myAge = 12;
+
+        if (myAge <= 12) {
+            console.log("i am less than 12")
+        } else { console.log("i am not up to 12 years old") };
+
+        if (myAge != 12) {
+            console.log("you are not 12 years old")
+        } else { console.log("you are 12 years old") };
+
+        if (myName == "samuel") {
+            console.log("you are samuel")
+        } else { console.log("you are not samuel") };
+
+        if (myAge === '12') {
+            console.log("you are 12 years old")
+        } else { console.log("we dont know your age") }
+
+        var favSentence = "Communication";
+        var favNum = 200;
+
+
+        if (favSentence == "Communication") {
+            if (favSentence == "Education") {
+                console.log("Education")
+            } else if (favSentence == "Announcement") {
+                console.log("Announcement")
+            } else if (favSentence == "communication") {
+                console.log("Communication")
+            } else {
+                console.log("No option.")
+            }
+        }
+
+        const thisYear = 2023;
+        let nextYear = 2024;
+
+
+        if (thisYear >= 2023) {
+            console.log("greater than equals 2023")
+        } else if (thisYear == 2023) {
+            console.log("We are in 2023")
+        } else {
+            console.log("We are all confused")
+        }
+
+        if (nextYear != 2024) {
+            console.log("not equals to 2024")
+        } else if (nextYear < 2024) {
+            console.log("less than 2024")
+        } else if (nextYear > 2023) {
+            console.log("greater than 2023")
+        } else if (nextYear <= 2024) {
+            console.log("will be less than equals 2024")
+        } else {
+            console.log("We are all confused")
+        }
+
+        const babyGirl = 'Ella';
+        const babyGirlAge = 16;
+
+        if (babyGirl == "ella" && babyGirlAge < 20) {
+            console.log("I am answer 1")
+        } else if (babyGirl == "Ella" && babyGirlAge > 16) {
+            console.log("I am answer 2")
+        } else if (babyGirl === "Ela" && babyGirlAge <= 16) {
+            console.log("I am answer 3")
+        } else if (babyGirlAge > 14 && babyGirlAge <= 16) {
+            console.log(" I am answer 4")
+        } else if (babyGirl == "ella" && babyGirlAge > 14) {
+            console.log("I am answer 5")
+        } else {
+            console.log("none of the above")
+        }
+
+        if (babyGirl == "ella" || babyGirlAge < 10 || babyGirlAge < 15 || babyGirlAge < 20) {
+            console.log("I am answer 1")
+        } else if (babyGirl == "Ella" || babyGirlAge < 16) {
+            console.log("I am answer 2")
+        } else {
+            console.log("none of the above")
+        }
+
+        let myNum = 5;
+        let myNumIncreased = myNum--;
+
+        console.log(myNum)
+
+        const myDailyFruits = ["Banana", "Orange", "Apple", "Pineapple", "Tangerine"];
+        for (let itemIndex = 0; itemIndex < myDailyFruits.length; itemIndex++) {
+            console.log(myDailyFruits[itemIndex])
+        }
+
+        for (let index = 1; index <= 10; index++) {
+            console.log(index)
+        }
+
+        for (let index = 3; index < myDailyFruits.length; index++) {
+            console.log(myDailyFruits[index])
+        }
+
+
+
+        let index = 0;
+
+        while (index < favFruits.length) {
+            console.log(favFruits[index])
+            index++
+        }
+
+        //***** (3) for in
+        let fruitList = ['Grape', 'Water melon']
+
+        for (let i in fruitList) {
+            console.log(fruitList[i])
+        }
+
+        for (let item of favFruits) {
+            console.log(item)
+        }
+
+        // (1) Map()             Syntax: array.map()
+        let myFriends = [
+            {
+                id: 1,
+                name: "John Doe",
+                email: "johndoe@gmail.com",
+                price: 700,
+                quantity: 2
+            },
+            {
+                id: 2,
+                name: "George Bush",
+                email: "gbush@yahoo.com",
+                price: 350,
+                quantity: 2
+            },
+            {
+                id: 3,
+                name: "Kelvin Smith",
+                email: "kelvinsmith@gmail.com",
+                price: 220,
+                quantity: 5
+            },
+            {
+                id: 4,
+                name: "Amaka Goddy",
+                email: "godamaka@yahoo.com",
+                price: 500,
+                quantity: 2
+            }
+        ]
+
+        // Task-1: Loop through the array data and print out the email of all users.
+        // myFriends.map(item => )
+        // const containMyFriends = myFriends.map((item, index) => item.email);
+        // console.log(containMyFriends)
+
+        // const LmyFriends = myFriends.map((item, index) => (item.price * item.quantity));
+        // console.log(LmyFriends)
+
+        // const sumAmount = LmyFriends.reduce((total, amount) => total += amount)
+        // console.log(sumAmount)
+
+        // const average = LmyFriends.reduce((total, amount, index, Array) => {
+        //     total += amount;
+        //     if (index === Array.length - 1) {
+        //         return total / Array.length;
+        //     } else { return total }
+        // })
+        // console.log(average)
+
+        // const divideIndex = LmyFriends.reduce((total, amount, index, array) => {
+        //     total += amount;
+        //     if(index === array.length) {
+
+        //     }
+        // })
+
+
+        var score = alert(prompt("enter a value"))
+
+        if (score > 100) {
+            alert("erro")
+        }
+        else if (score >= 80) {
+            alert(`${score} is A1`)
+        }
+        else if (score < 80) {
+            alert(score + "B2")
+        }
+        else if (score < 69) {
+            alert(score + "B3")
+        }
+        else if (score >= 65) {
+            alert(score + "B3")
+        }
+        else if (score <= 64) {
+            alert(score + "c4")
+        } else if (score < 60) {
+            alert(score + "c4")
+        }
+    </script>
+</body>
+
+</html>

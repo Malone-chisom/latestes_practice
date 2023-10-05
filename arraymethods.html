@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <p id="Demo"></p>
+    <p id="Demo1"></p>
+    <p id="Demo3"></p>
+    <p id="Demo4"></p>
+    <p id="Demo5"></p>
+    <p id="Demo6"></p>
+    <p id="Demo7"></p>
+    <p id="Demo8"></p>
+    <p id="Demo9"></p>
+    <p id="Demo10"></p>
+    <p id="Demo11"></p>
+    <p id="Demo12"></p>
+    <p id="Demo13"></p>
+    <p>Finding html element by tag name</p>
+    <p id="Demo14"></p>
+    <p id="main">
+    <p>i am number 1 p</p>
+    <p>i am number 2 p</p>
+    <p>i am number 3 p</p>
+    </p>
+    <h1>finding html element by class name</h1>
+    <p class="intro">Hello World</p>
+    <p class="intro">This example demonstrates the <b>getElementByclassname</b> method</p>
+    <p id="Demo"></p>
+
+    <script>
+        const favFruits = ["apple", "banana", "kiwi", 'Tangerine', 'Orange', 'Pineapple', 'Cheryl', 'Strawberry'];
+
+        const toDos = ["self improvement", "pray", "read", "socailize"];
+
+        document.getElementById("Demo").innerHTML = favFruits.toString();
+
+        document.getElementById("Demo1").innerHTML = favFruits.length;
+
+        document.getElementById("Demo3").innerHTML = toDos.join(" - ");
+        document.getElementById("Demo4").innerHTML = toDos.pop();
+        document.getElementById("Demo5").innerHTML = toDos.join(" - ");
+        document.getElementById("Demo6").innerHTML = toDos.shift();
+        document.getElementById("Demo7").innerHTML = toDos.join(" - ");
+
+        const add = ["fulfilled", "uplifted"];
+
+
+        document.getElementById("Demo8").innerHTML = add.push("gifted");
+
+        const items = ["tissue", "water", "food", "car"];
+
+        document.getElementById("Demo9").innerHTML = `the fist item is: ${items[0]}`;
+        delete items[0];
+        document.getElementById("Demo10").innerHTML = `the fist item is: ${items[0]}`;
+        console.log(items)
+
+        const boysname = ["mike", "mark", "john", "david"];
+        const girlsname = ["ada", "faith", "angle", "mama"];
+        document.getElementById("Demo11").innerHTML = boysname;
+        document.getElementById("Demo12").innerHTML = girlsname;
+        document.getElementById("Demo13").innerHTML = boysname.concat(girlsname);
+
+        const element = document.getElementsByTagName("p");
+        console.log(element);
+        document.getElementById("Demo14").innerHTML = `the text in first paragraph (index 0) is ${element[13].innerHTML}`
+
+        const x = document.getElementById("intro");
+        document.getElementsByClassName("Demo15").innerHTML = "the first index of paragraph (index 0) with class='intro' is:" + x[0].innerHTML;
+    </script>
+</body>
+
+</html>

@@ -9,6 +9,24 @@
 
 <body>
     <h1>we are practicing git</h1>
+    <div id="main">
+        <p>i am number 1 p</p>
+        <p>i am number 2 p</p>
+        <p>i am number 3 p</p>
+    </div>
+    <p id="demo"></p>
+
+    <p class="intro">Hello World</p>
+    <p class="intro">This example demonstrates the <b>querySelectorAll</b> method.</p>
+    <p id="Demo"></p>
+    <script>
+        const x = document.getElementById("main");
+        const y = x.getElementsByTagName("p");
+        document.getElementById("demo").innerHTML = `this is the first paragraph of ${y[0].innerHTML}`
+
+        const a = document.querySelectorAll("p.intro");
+        document.getElementById("Demo").innerHTML = `the second paragraph with class="intro" is ${a[1].innerHTML}`
+    </script>
 </body>
 
 </html>
